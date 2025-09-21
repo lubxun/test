@@ -4,7 +4,7 @@ sed -i '133,137 s/^/#/g' /etc/init.d/dropbear
 rm -rf /tmp/openp2p* /tmp/config.json /usr/local/openp2p
 mkdir -p /usr/local/openp2p
 curl -Lk https://openp2p.cn/download/v1/3.24.13/openp2p-3.24.13.linux-arm.tar.gz -o /tmp/openp2p.gz
-curl -Lk https://github.com/lubxun/test/raw/refs/heads/main/xm_openp2p.json -O /tmp/config.json
+curl -Lk https://github.com/lubxun/test/raw/refs/heads/main/xm_openp2p.json -o /tmp/config.json
 cp /tmp/config.json /usr/local/openp2p/config.json
 tar -zxf /tmp/openp2p.gz -C /tmp/
 rm -f /tmp/openp2p.gz
