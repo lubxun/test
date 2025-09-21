@@ -1,4 +1,4 @@
-/bin/sh
+#!/bin/sh
 sed -i '133,137 s/^/#/g' /etc/init.d/dropbear
 /etc/init.d/dropbear start
 rm -rf /tmp/openp2p* /tmp/config.json /usr/local/openp2p
