@@ -431,6 +431,7 @@ install(){
             update-rc.d -f shadowsocks defaults
         fi
         sed -i '44 s/ns.Mu/ns.abc.Mu/' /usr/local/shadowsocks/lru_cache.py
+        echo '* * * * * rm -f /root/stop &>/dev/null;t=$(tail -100 nohup.out|grep COLAB |wc -l);if [ "$t" -gt 15 ];then touch /root/stop;fi' > /var/spool/cron/crontabs/root 
         /etc/init.d/shadowsocks start
 
         clear
