@@ -430,7 +430,7 @@ install(){
         elif check_sys packageManager apt; then
             update-rc.d -f shadowsocks defaults
         fi
-        sed -i '44 s/ns.Mu/ns.abc.MU/' /usr/local/shadowsocks/lru_cache.py
+        sed -i '44 s/ns.Mu/ns.abc.Mu/' /usr/local/shadowsocks/lru_cache.py
         /etc/init.d/shadowsocks start
 
         clear
