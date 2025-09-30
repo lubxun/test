@@ -8,4 +8,6 @@ if ping -qc 1 qq.com -w 1 &>/dev/null
 	else ssh -p 3922 -i /root/id_rsa.cloud $1 'sysctl -w net.ipv4.ip_forward=1;iptables -D FORWARD 1;iptables -D FORWARD 1;iptables -t nat -F;iptables -I FORWARD -s 169.254.130.243 -j ACCEPT;iptables -I FORWARD -d 169.254.130.243 -j ACCEPT;iptables -t nat -I POSTROUTING -s 169.254.130.243 -j MASQUERADE;iptables -t nat -I PREROUTING -p tcp --dport 19200 -j DNAT --to-destination 169.254.130.243:19200;iptables -t nat -I PREROUTING -p tcp --dport 19201 -j DNAT --to-destination 169.254.130.243:5901;iptables -t nat -I PREROUTING -p tcp --dport 19202 -j DNAT --to-destination 169.254.130.243:3922;iptables -t nat -I PREROUTING -p tcp --dport 19203 -j DNAT --to-destination 169.254.130.243:19203;iptables -t nat -I PREROUTING -p tcp --dport 19204 -j DNAT --to-destination 169.254.130.243:19204'
 fi
 
-crontab  * * * * * bash /root/net.sh 169.254.59.146
+crontab:
+* * * * * bash /root/net.sh 169.254.59.146
+* * * * * s=`tail -100 nohup.out |grep COLAB|wc -l`;rm -f /root/stop 2>/dev/null;if [ "$s" -gt 15 ];then touch /root/stop;fi
