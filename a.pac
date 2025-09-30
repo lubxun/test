@@ -77,7 +77,7 @@ function FindProxyForURL(url, host) {
 
   for (let domain of targetDomains) {
     if (shExpMatch(host, domain)) {
-      return "SOCKS5 192.168.10.1:1083";
+      return "PROXY 192.168.10.1:1083";
     }
   }
   return "DIRECT"; // 其他直连
