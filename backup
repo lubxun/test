@@ -1,0 +1,15 @@
+hosts：
+69.165.68.2	lt
+103.108.185.137	hk
+180.188.45.5	xm
+36.250.73.227	usa
+150.242.83.186	cs
+123.129.230.248	jn
+160.202.242.5	sy
+110.42.34.249	nb
+192.168.10.1	lq
+150.242.83.139	my
+
+苹果脚本：
+do shell script "networksetup -setwebproxystate 'Wi-Fi' off&&networksetup -setsecurewebproxystate 'Wi-Fi' off&&networksetup -setsocksfirewallproxystate 'Wi-Fi' off"
+display notification "已经关闭" with title "WIFI代理"
