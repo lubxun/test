@@ -9,6 +9,8 @@ if ping -qc 1 qq.com -w 1 &>/dev/null
 fi
 
 crontab:
+* * * * * rm -f /root/stop &>/dev/null;t=$(tail -100 nohup.out|grep COLAB |wc -l);if [ "$t" -gt 15 ];then touch /root/stop;fi
 * * * * * bash /root/net.sh 169.254.59.146
-* * * * * s=`tail -100 nohup.out |grep COLAB|wc -l`;rm -f /root/stop 2>/dev/null;if [ "$s" -gt 15 ];then touch /root/stop;fi
-@reboot	/usr/sbin/iptables -P INPUT ACCEPT;nohup python -m http.server 19203 -d ./ & /usr/bin/vncserver :1 -geometry 1280x800 -depth 16 & curl -LkO https://github.com/lubxun/test/raw/refs/heads/main/a.pac;curl -LkO https://github.com/lubxun/test/raw/refs/heads/main/h.pac
+@reboot /usr/sbin/iptables -P INPUT ACCEPT;curl -LkO https://github.com/lubxun/test/raw/refs/heads/main/a.pac;curl -LkO https://github.com/lubxun/test/raw/refs/heads/main/h.pac;curl  -LkO https://api.openp2p.cn:55555/download/v1/3.24.10/openp2p-3.24.10.linux-amd64.tar.gz;tar xf openp2p-3.24.10.linux-amd64.tar.gz;./openp2p install -token 11995679121711617584 -node CS_lt_vr -sharebandwidth 0 -loglevel 0
+@reboot python -m http.server 19203 -d ./ > /root/nohup.out  
+@reboot  /usr/bin/vncserver :1 -geometry 1280x800 -depth 16
