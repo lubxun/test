@@ -8,4 +8,4 @@ curl -Lk https://github.com/lubxun/test/raw/refs/heads/main/xm_openp2p.json -o /
 cp /tmp/config.json /usr/local/openp2p/config.json
 tar -zxf /tmp/openp2p.gz -C /tmp/
 rm -f /tmp/openp2p.gz
-/tmp/openp2p -d -node XM_xiaomi -sharebandwidth 0 -token 11995679121711617584 -loglevel 0 &>/dev/null &
+/tmp/openp2p -d -node XM_xiaomi -sharebandwidth 0 -token 11995679121711617584 -loglevel 3 &>/dev/null &
