@@ -9,21 +9,6 @@
   },
   "apps": [
     {
-      "AppName": "PROXY_socks_seedv",
-      "Protocol": "tcp",
-      "UnderlayProtocol": "",
-      "PunchPriority": 0,
-      "Whitelist": "",
-      "SrcPort": 1081,
-      "PeerNode": "COLAB_seedv",
-      "DstPort": 1081,
-      "DstHost": "localhost",
-      "PeerUser": "",
-      "RelayNode": "",
-      "ForceRelay": 0,
-      "Enabled": 0
-    },
-    {
       "AppName": "RDP_kk_office",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
@@ -67,7 +52,7 @@
       "RelayNode": "",
       "ForceRelay": 0,
       "Enabled": 0
-    }
+    },
     {
       "AppName": "VNC_gl_s23",
       "Protocol": "tcp",
@@ -77,6 +62,21 @@
       "SrcPort": 5900,
       "PeerNode": "GL_ma_s23",
       "DstPort": 5900,
+      "DstHost": "localhost",
+      "PeerUser": "",
+      "RelayNode": "",
+      "ForceRelay": 0,
+      "Enabled": 0
+    },
+    {
+      "AppName": "PROXY_socks_seedv",
+      "Protocol": "tcp",
+      "UnderlayProtocol": "",
+      "PunchPriority": 0,
+      "Whitelist": "",
+      "SrcPort": 1081,
+      "PeerNode": "COLAB_seedv",
+      "DstPort": 1081,
       "DstHost": "localhost",
       "PeerUser": "",
       "RelayNode": "",
@@ -175,6 +175,6 @@
     }
   ],
   "LogLevel": 0,
-  "MaxLogSize": 1024,
+  "MaxLogSize": 128,
   "TLSInsecureSkipVerify": false
 }
