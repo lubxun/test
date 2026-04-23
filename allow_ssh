@@ -1,0 +1,4 @@
+#!/bin/bash
+sed -i 's/^ListenAddress/#ListenAddress/g' /etc/ssh/sshd_config
+iptables -R INPUT `iptables -nvL INPUT --line|awk '/3922/ {print $1}'` -p tcp -m tcp --dport 3922 -m state --state NEW,ESTABLISHED -j ACCEPT
+systemctl restart sshd
