@@ -81,7 +81,7 @@
       "PeerUser": "",
       "RelayNode": "",
       "ForceRelay": 0,
-      "Enabled": 0
+      "Enabled": 1
     },
     {
       "AppName": "PROXY_ssr",
