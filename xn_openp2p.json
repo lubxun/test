@@ -1,0 +1,45 @@
+{
+  "network": {
+    "Token": 11995679121711617584,
+    "Node": "XINAN_pdcn",
+    "ShareBandwidth": 0,
+    "ServerHost": "api.openp2p.cn",
+    "ServerPort": 27183,
+    "PublicIPPort": 56072
+  },
+  "apps": [
+    {
+      "AppName": "XM_kk_file",
+      "Protocol": "tcp",
+      "UnderlayProtocol": "",
+      "PunchPriority": 0,
+      "Whitelist": "",
+      "SrcPort": 88,
+      "PeerNode": "xm_kk_gw",
+      "DstPort": 88,
+      "DstHost": "localhost",
+      "PeerUser": "",
+      "RelayNode": "",
+      "ForceRelay": 0,
+      "Enabled": 1
+    },
+    {
+      "AppName": "FILE_seedv",
+      "Protocol": "tcp",
+      "UnderlayProtocol": "",
+      "PunchPriority": 0,
+      "Whitelist": "",
+      "SrcPort": 888,
+      "PeerNode": "COLAB_seedv",
+      "DstPort": 80,
+      "DstHost": "localhost",
+      "PeerUser": "",
+      "RelayNode": "",
+      "ForceRelay": 0,
+      "Enabled": 1
+    }
+  ],
+  "LogLevel": 3,
+  "MaxLogSize": 128,
+  "TLSInsecureSkipVerify": false
+}
