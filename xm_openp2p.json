@@ -68,6 +68,21 @@
       "ForceRelay": 0,
       "Enabled": 0
     },
+        {
+      "AppName": "SHELL_xinan",
+      "Protocol": "tcp",
+      "UnderlayProtocol": "",
+      "PunchPriority": 0,
+      "Whitelist": "",
+      "SrcPort": 222,
+      "PeerNode": "XINAN_pdcn",
+      "DstPort": 22,
+      "DstHost": "localhost",
+      "PeerUser": "",
+      "RelayNode": "",
+      "ForceRelay": 0,
+      "Enabled": 0
+    },
     {
       "AppName": "PROXY_socks_seedv",
       "Protocol": "tcp",
