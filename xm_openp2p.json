@@ -81,7 +81,22 @@
       "PeerUser": "",
       "RelayNode": "",
       "ForceRelay": 0,
-      "Enabled": 0
+      "Enabled": 1
+    },
+    {
+      "AppName": "ARIA2_xn",
+      "Protocol": "tcp",
+      "UnderlayProtocol": "",
+      "PunchPriority": 0,
+      "Whitelist": "",
+      "SrcPort": 6800,
+      "PeerNode": "XINAN_pdcn",
+      "DstPort": 6800,
+      "DstHost": "localhost",
+      "PeerUser": "",
+      "RelayNode": "",
+      "ForceRelay": 0,
+      "Enabled": 1
     },
     {
       "AppName": "PROXY_socks_seedv",
