@@ -134,7 +134,7 @@
       "UnderlayProtocol": "",
       "PunchPriority": 0,
       "Whitelist": "",
-      "SrcPort": 1083,
+      "SrcPort": 1080,
       "PeerNode": "COLAB_seedv",
       "DstPort": 1080,
       "DstHost": "localhost",
