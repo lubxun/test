@@ -69,13 +69,13 @@
       "Enabled": 0
     },
         {
-      "AppName": "SHELL_XiNan",
+      "AppName": "SHELL_ef",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
       "Whitelist": "",
       "SrcPort": 222,
-      "PeerNode": "XINAN_pdcn",
+      "PeerNode": "EF_pdcn",
       "DstPort": 22,
       "DstHost": "localhost",
       "PeerUser": "",
@@ -84,13 +84,13 @@
       "Enabled": 1
     },
     {
-      "AppName": "ARIA2_XiNan",
+      "AppName": "ARIA2_ef",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
       "Whitelist": "",
       "SrcPort": 6800,
-      "PeerNode": "XINAN_pdcn",
+      "PeerNode": "EF_pdcn",
       "DstPort": 6800,
       "DstHost": "localhost",
       "PeerUser": "",
