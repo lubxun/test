@@ -69,13 +69,13 @@
       "Enabled": 0
     },
         {
-      "AppName": "SHELL_ef",
+      "AppName": "SHELL_erf",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
       "Whitelist": "",
       "SrcPort": 222,
-      "PeerNode": "EF_pdcn",
+      "PeerNode": "ERF_pdcn",
       "DstPort": 22,
       "DstHost": "localhost",
       "PeerUser": "",
@@ -84,13 +84,13 @@
       "Enabled": 1
     },
     {
-      "AppName": "ARIA2_ef",
+      "AppName": "ARIA2_erf",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
       "Whitelist": "",
       "SrcPort": 6800,
-      "PeerNode": "EF_pdcn",
+      "PeerNode": "ERF_pdcn",
       "DstPort": 6800,
       "DstHost": "localhost",
       "PeerUser": "",
