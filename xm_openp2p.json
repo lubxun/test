@@ -9,7 +9,7 @@
   },
   "apps": [
     {
-      "AppName": "RDP_kk_office",
+      "AppName": "RDPkk_office",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -24,7 +24,7 @@
       "Enabled": 0
     },
     {
-      "AppName": "SMB_kk_office",
+      "AppName": "SMBkk_office",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -39,7 +39,7 @@
       "Enabled": 0
     },
     {
-      "AppName": "SMb_kk_office",
+      "AppName": "SMbkk_office",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -54,7 +54,7 @@
       "Enabled": 0
     },
     {
-      "AppName": "VNC_gl_s23",
+      "AppName": "VNCgl_s23",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -69,7 +69,7 @@
       "Enabled": 0
     },
         {
-      "AppName": "SHELL_xinan",
+      "AppName": "SHELL_XiNan",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -84,7 +84,7 @@
       "Enabled": 1
     },
     {
-      "AppName": "ARIA2_xn",
+      "AppName": "ARIA2_XiNan",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -99,7 +99,7 @@
       "Enabled": 1
     },
     {
-      "AppName": "PROXY_socks_seedv",
+      "AppName": "PROXYsocks_seedv",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -114,7 +114,7 @@
       "Enabled": 1
     },
     {
-      "AppName": "PROXY_ssr",
+      "AppName": "PROXYssr_seedv",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -129,7 +129,7 @@
       "Enabled": 1
     },
     {
-      "AppName": "PROXY_http_seedv",
+      "AppName": "PROXYhttp_seedv",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
@@ -159,7 +159,7 @@
       "Enabled": 1
     },
     {
-      "AppName": "SHELL_seedv1",
+      "AppName": "SHELL1_seedv",
       "Protocol": "tcp",
       "UnderlayProtocol": "",
       "PunchPriority": 0,
