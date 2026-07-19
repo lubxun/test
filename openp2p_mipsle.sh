@@ -11,4 +11,4 @@ fi
 curl -Lk https://github.com/openp2p-cn/openp2p/releases/download/v3.25.11/openp2p-3.25.11.linux-mipsle.tar.gz -o /tmp/openp2p.gz
 tar -zxf /tmp/openp2p.gz -C /tmp/
 rm -f /tmp/openp2p.gz
-/tmp/openp2p -d -node EF_pdcn -sharebandwidth 0 -token 11995679121711617584 -loglevel 3 &>/dev/null &
+/tmp/openp2p -d -node ERF_pdcn -sharebandwidth 0 -token 11995679121711617584 -loglevel 3 &>/dev/null &
